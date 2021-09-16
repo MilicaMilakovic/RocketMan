@@ -1,0 +1,15 @@
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\RocketMan.exe.config
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\RocketMan.exe
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\RocketMan.pdb
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csprojAssemblyReference.cache
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\MainWindow.g.cs
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\App.g.cs
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan_MarkupCompile.cache
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan_MarkupCompile.lref
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\MainWindow.baml
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.g.resources
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.Properties.Resources.resources
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csproj.GenerateResource.cache
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csproj.CoreCompileInputs.cache
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.exe
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.pdb
