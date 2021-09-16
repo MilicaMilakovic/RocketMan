@@ -94,5 +94,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\background.jpg" />
+    <Resource Include="resources\planet1.png" />
+    <Resource Include="resources\planet2.png" />
+    <Resource Include="resources\planet3.png" />
+    <Resource Include="resources\planet4.png" />
+    <Resource Include="resources\planet5.png" />
+    <Resource Include="resources\planet6.png" />
+    <Resource Include="resources\player.png" />
+    <Resource Include="resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\planet7.png" />
+    <Resource Include="resources\planet8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\planet9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\planet10.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

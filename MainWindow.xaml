@@ -5,13 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RocketMan"
         mc:Ignorable="d"
-        Title="RocketMan" Height="800" Width="700">
-    <Canvas Background="BlueViolet" Name="myCanvas" Focusable="True" KeyUp="OnKeyUp" KeyDown="OnKeyDown">
+        Title="RocketMan" Height="600" Width="550">
+    <Canvas Name="myCanvas" Focusable="True" KeyUp="OnKeyUp" KeyDown="OnKeyDown">
 
-        <Rectangle Height="150" Width="100" Fill="White" Name="Player" Canvas.Left="282" Canvas.Top="584"></Rectangle>
+        <Canvas.Background>
+            <ImageBrush ImageSource="pack://application:,,,/resources/background.jpg" Stretch="UniformToFill"/>
+        </Canvas.Background>
+        <Rectangle Height="150" Width="156" Fill="White" Name="Player" Canvas.Left="186" Canvas.Top="390"></Rectangle>
 
-        <Rectangle Tag="Planet" Width="150" Height="150" Fill="Red" Canvas.Left="54" Canvas.Top="36"></Rectangle>
-        <Rectangle Tag="Planet" Width="150" Height="150" Fill="Red" Canvas.Left="496" Canvas.Top="266"></Rectangle>
+        <Rectangle Tag="Planet" Width="106" Height="104" Fill="Transparent" Canvas.Left="42" Canvas.Top="34" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-11.466"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Tag="Planet" Width="110" Height="106" Fill="Transparent" Canvas.Left="356" Canvas.Top="234" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="10.397"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Tag="Planet" Width="136" Height="128" Fill="Transparent" Canvas.Left="374" Canvas.Top="34"></Rectangle>
+        <Rectangle Tag="Planet" Width="64" Height="64" Fill="Transparent" Canvas.Left="38" Canvas.Top="252"></Rectangle>
 
     </Canvas>
 </Window>
