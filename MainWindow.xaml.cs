@@ -31,12 +31,15 @@ namespace RocketMan
         ImageBrush playerImage = new ImageBrush();
         ImageBrush starImage = new ImageBrush();
 
-        int speed = 10;
+        double speed = 10;
         int playerSpeed = 8;
+        double starSpeed = 5;
 
         int starFrequency = 50;
         int starCount = 0;
 
+        int speedUp = 200;
+        double duration = 0;
         Rect playerHitBox;
 
         List<Rectangle> ToRemove = new List<Rectangle>();
@@ -58,15 +61,25 @@ namespace RocketMan
         private void GameLoop(object sender, EventArgs e)
         {
 
+            duration += 0.05;
+
             --starFrequency;
+            --speedUp;
+
+            if (speedUp<0)
+            {
+                speed += 1;
+                starSpeed += 0.9;
+                speedUp = random.Next(200, 600);
+            }
 
             StarCount.Content = starCount.ToString();
             playerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.ActualWidth, Player.ActualHeight);
 
-
+            
             // pomjeranje rakete
 
-            if (goLeft == true && Canvas.GetLeft(Player) > -30)
+            if (goLeft == true && Canvas.GetLeft(Player) > -50)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - playerSpeed);
             }
@@ -104,12 +117,14 @@ namespace RocketMan
                         gameOver = true;
                         gameTimer.Stop();
 
+                        
+
                     }
 
                 }
                 if ((string)x.Tag == "Star")
                 {
-                    Canvas.SetTop(x, Canvas.GetTop(x) + 5);
+                    Canvas.SetTop(x, Canvas.GetTop(x) + starSpeed);
                     Rect starHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
 
                     if (playerHitBox.IntersectsWith(starHitBox))
@@ -118,7 +133,7 @@ namespace RocketMan
                         ToRemove.Add(x);
                     }
 
-                    if(Canvas.GetTop(x) > 400)
+                    if(Canvas.GetTop(x) > 500)
                     {
                         ToRemove.Add(x);
                     }
@@ -169,8 +184,9 @@ namespace RocketMan
 
         private void StartGame()
         {
-            speed = 10;
+            speed = 5;
             playerSpeed = 12;
+            starSpeed = 4;
             starCount = 0;
             
 
@@ -178,7 +194,7 @@ namespace RocketMan
             goRight = false;
             gameOver = false;
 
-            playerImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/resources/player.png"));
+            playerImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/resources/player2.png"));
             starImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/resources/1.png"));
            
 
@@ -206,6 +222,10 @@ namespace RocketMan
                     //}
                 }
 
+                if((string)x.Tag == "Star")
+                {
+                    ToRemove.Add(x);
+                }
                
             }
 

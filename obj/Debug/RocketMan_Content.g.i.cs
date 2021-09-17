@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/outer%20space.gif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/player2.png")]
 
 

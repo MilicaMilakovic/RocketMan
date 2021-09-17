@@ -7,14 +7,18 @@
         xmlns:local="clr-namespace:RocketMan"
         mc:Ignorable="d"
         Title="RocketMan" Height="600" Width="550">
+
+
     <Canvas Name="myCanvas" Focusable="True" KeyUp="OnKeyUp" KeyDown="OnKeyDown">
+
+
 
 
         <Canvas.Background>
             <ImageBrush ImageSource="pack://application:,,,/resources/background.jpg" Stretch="UniformToFill"/>
         </Canvas.Background>
 
-        <Rectangle  Margin="0 0 0 0" Height="122" Width="60"  Fill="White" Name="Player" Canvas.Left="246" Canvas.Top="416"></Rectangle>
+        <Rectangle  Margin="0 0 0 0" Height="104" Width="48"  Fill="White" Name="Player" Canvas.Left="246" Canvas.Top="434"></Rectangle>
 
         <Rectangle  Margin="0 0 0 0" Tag="Planet" Width="106" Height="104" Fill="Transparent" Canvas.Left="52" Canvas.Top="64" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
@@ -26,7 +30,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Tag="Planet" Margin="0 0 0 0"  Width="110" Height="106" Fill="Transparent" Canvas.Left="356" Canvas.Top="234" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Tag="Planet"  Margin="0 0 0 0"  Width="110" Height="106" Fill="Transparent" Canvas.Left="356" Canvas.Top="234" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -36,8 +40,8 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Tag="Planet" Margin="0 0 0 0 "  Width="94" Height="90" Fill="Transparent" Canvas.Left="416" Canvas.Top="34"></Rectangle>
-        <Rectangle Tag="Planet" Margin="0 0 0 0"   Width="64" Height="64" Fill="Transparent" Canvas.Left="38" Canvas.Top="252"></Rectangle>
+        <Rectangle Tag="Planet"  Margin="0 0 0 0 "  Width="94" Height="90" Fill="Transparent" Canvas.Left="416" Canvas.Top="34"></Rectangle>
+        <Rectangle Tag="Planet"  Margin="0 0 0 0"   Width="64" Height="64" Fill="Transparent" Canvas.Left="38" Canvas.Top="252"></Rectangle>
         <Image Source="/resources/field.png" Height="65" Width="118" Canvas.Left="21"/>
 
         <Image gif:ImageBehavior.AnimatedSource="/resources/coin.gif" Canvas.Left="14" Canvas.Top="10" Width="47" Height="41" Stretch="UniformToFill"/>
@@ -47,4 +51,6 @@
 
 
     </Canvas>
+
+
 </Window>

@@ -128,5 +128,11 @@
   <ItemGroup>
     <Resource Include="resources\coin.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\Outer space.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\player2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
