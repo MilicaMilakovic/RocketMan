@@ -6,13 +6,11 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:RocketMan"
         mc:Ignorable="d"
-        Title="RocketMan" Height="600" Width="550">
+        Title="SpaceAdventure" Height="600" Width="550"
+        WindowStartupLocation="CenterScreen">
 
 
     <Canvas Name="myCanvas" Focusable="True" KeyUp="OnKeyUp" KeyDown="OnKeyDown">
-
-
-
 
         <Canvas.Background>
             <ImageBrush ImageSource="pack://application:,,,/resources/background.jpg" Stretch="UniformToFill"/>

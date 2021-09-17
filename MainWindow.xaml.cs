@@ -79,7 +79,7 @@ namespace RocketMan
             
             // pomjeranje rakete
 
-            if (goLeft == true && Canvas.GetLeft(Player) > -50)
+            if (goLeft == true && Canvas.GetLeft(Player) > 5)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - playerSpeed);
             }

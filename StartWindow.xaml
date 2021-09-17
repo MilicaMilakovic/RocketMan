@@ -1,0 +1,43 @@
+﻿<Window x:Class="RocketMan.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RocketMan"
+        mc:Ignorable="d"
+        Title="SpaceAdventure" Height="550" Width="450"
+        WindowStartupLocation="CenterScreen">
+
+
+    <Window.Resources>
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Canvas x:Name="startCanvas" Focusable="True" KeyDown="OnKeyDown">
+
+        <Canvas.Background>
+            <ImageBrush ImageSource="/resources/startPage.jpg"></ImageBrush>
+
+        </Canvas.Background>
+
+        <Button Style="{StaticResource MyButtonStyle}" Cursor="Hand" Click="Start_Game" Canvas.Left="100" Canvas.Top="330" Height="122" Width="234" Background="Transparent" BorderBrush="Transparent">
+            <StackPanel>
+                <Image Source="/resources/startBtn.png" Height="113" Width="217"/>
+            </StackPanel>
+
+
+        </Button>
+
+
+    </Canvas>
+</Window>
