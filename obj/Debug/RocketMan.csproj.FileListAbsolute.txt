@@ -19,3 +19,5 @@ C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\WpfAnimatedGif.xml
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csproj.CopyComplete
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\StartWindow.g.cs
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\StartWindow.baml
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\FinishWindow.g.cs
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\FinishWindow.baml

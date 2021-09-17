@@ -33,8 +33,6 @@ namespace RocketMan
             this.Close();
         }
 
-       
-
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Space)

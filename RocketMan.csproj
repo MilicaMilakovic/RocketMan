@@ -58,9 +58,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FinishWindow.xaml.cs">
+      <DependentUpon>FinishWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="FinishWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,6 +153,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="resources\startBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\gameOver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\go.jpg" />
+    <Resource Include="resources\go2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\restart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

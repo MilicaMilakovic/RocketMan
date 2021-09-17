@@ -112,12 +112,12 @@ namespace RocketMan
 
                     if (playerHitBox.IntersectsWith(planetHitBox))
                     {
-                        //Canvas.SetLeft(x, Canvas.GetLeft(Player));
-                        //Canvas.SetTop(x, Canvas.GetTop(Player));
                         gameOver = true;
                         gameTimer.Stop();
 
-                        
+                        FinishWindow finishWindow = new FinishWindow();
+                        finishWindow.Closed += (send, ee) => StartGame();
+                        finishWindow.Show();
 
                     }
 
@@ -182,7 +182,7 @@ namespace RocketMan
             }
         }
 
-        private void StartGame()
+        public void StartGame()
         {
             speed = 5;
             playerSpeed = 12;
