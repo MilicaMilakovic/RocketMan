@@ -13,3 +13,7 @@ C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csproj.Genera
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csproj.CoreCompileInputs.cache
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.exe
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.pdb
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\WpfAnimatedGif.pdb
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan.csproj.CopyComplete
