@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,11 +20,18 @@ namespace RocketMan
     /// </summary>
     public partial class FinishWindow : Window
     {
+        
         public FinishWindow()
         {
             InitializeComponent();
 
             myCanvas.Focus();
+
+            var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            string text = System.IO.File.ReadAllText(projectPath + "/resources/scores.txt");
+            int highestScore = Int32.Parse(text);
+
+            Score.Content = "Highest Score : " + highestScore;
         }
 
         private void Restart(object sender, RoutedEventArgs e)

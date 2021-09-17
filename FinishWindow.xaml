@@ -31,7 +31,7 @@
             <ImageBrush ImageSource="/resources/go2.jpg"></ImageBrush>
         </Canvas.Background>
 
-        <Image Source="/resources/field.png" Height="94" Width="164" Canvas.Left="64"/>
+        <Image Source="/resources/field.png" Height="94" Width="164" Canvas.Left="63" Canvas.Top="-10"/>
 
         <Button Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand" Click="Restart" Canvas.Left="116" Canvas.Top="321" Height="61" Width="64" Background="Transparent" BorderBrush="Transparent">
             <StackPanel HorizontalAlignment="Left" Width="78">
@@ -39,7 +39,7 @@
             </StackPanel>
         </Button>
 
-        <Image Source="/resources/player2.png" Height="134" Canvas.Top="94" Width="209" Canvas.Left="-6" RenderTransformOrigin="0.5,0.5">
+        <Image Source="/resources/player2.png" Height="141" Canvas.Top="84" Width="269" Canvas.Left="-48" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,15 +50,26 @@
             </Image.RenderTransform>
         </Image>
 
-        <Label Foreground="White" FontWeight="Bold" FontSize="18" Canvas.Left="91" Canvas.Top="25" RenderTransformOrigin="0.5,0.5" Height="36" Width="113">
+        <Label Foreground="White" FontWeight="Bold" FontSize="18" Canvas.Left="90" Canvas.Top="15" RenderTransformOrigin="0.5,0.5" Height="36" Width="113">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform AngleY="-0.7"/>
-                    <RotateTransform Angle="0.357"/>
+                    <RotateTransform Angle="-1.191"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform> Game Over!
         </Label>
+        <Image Source="/resources/tardis.png" Height="36" Canvas.Top="267" Width="38" Canvas.Left="11" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-17.689"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="Score" FontWeight="ExtraBold"  FontSize="12" Foreground ="LavenderBlush" Canvas.Left="95" Canvas.Top="66">Highest Score : 0</Label>
     </Canvas>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -117,6 +118,17 @@ namespace RocketMan
 
                         FinishWindow finishWindow = new FinishWindow();
                         finishWindow.Closed += (send, ee) => StartGame();
+                        var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+                        string text = System.IO.File.ReadAllText(projectPath+"/resources/scores.txt");
+                        int highestScore = Int32.Parse(text);
+
+                        if(starCount>highestScore)
+                        {
+                            highestScore = starCount;
+                            System.IO.File.WriteAllText(projectPath+"/resources/scores.txt", highestScore.ToString());
+                        }
+
                         finishWindow.Show();
 
                     }
