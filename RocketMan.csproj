@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>spaceship.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -166,6 +169,8 @@
     <Content Include="resources\backgroundMusic.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="spaceship.ico" />
+    <Resource Include="resources\exit.png" />
     <Content Include="resources\starSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

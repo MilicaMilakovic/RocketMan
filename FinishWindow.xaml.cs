@@ -45,5 +45,11 @@ namespace RocketMan
             if (e.Key == Key.Space)
                 Restart(sender, e);
         }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+
+        }
     }
 }

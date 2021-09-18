@@ -40,6 +40,12 @@
             </StackPanel>
         </Button>
 
+        <Button Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand" Click="Exit" Canvas.Left="257" Height="41" Width="41" Background="Transparent" BorderBrush="Transparent" Canvas.Top="10">
+            <StackPanel HorizontalAlignment="Left" Width="41">
+                <Image Source="/resources/exit.png" Height="41" />
+            </StackPanel>
+        </Button>
+
         <Image Source="/resources/player2.png" Height="141" Canvas.Top="84" Width="269" Canvas.Left="-48" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
