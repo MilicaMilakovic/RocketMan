@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/backgroundmusic.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/gameoversound.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/starsound.wav")]
 
 

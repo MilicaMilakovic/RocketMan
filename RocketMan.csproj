@@ -171,6 +171,7 @@
     </Content>
     <Resource Include="spaceship.ico" />
     <Resource Include="resources\exit.png" />
+    <Resource Include="resources\spaceship.ico" />
     <Content Include="resources\starSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

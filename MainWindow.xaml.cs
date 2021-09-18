@@ -48,7 +48,7 @@ namespace RocketMan
 
         private MediaPlayer player1 = new MediaPlayer();
         private MediaPlayer player2 = new MediaPlayer();
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -57,6 +57,8 @@ namespace RocketMan
 
             gameTimer.Tick += GameLoop;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
+
+            
 
             StartGame();
 
@@ -132,6 +134,10 @@ namespace RocketMan
                             System.IO.File.WriteAllText(projectPath+"/resources/scores.txt", highestScore.ToString());
                         }
 
+
+                        player2.Open(new Uri(projectPath + "/resources/gameOverSound.wav", UriKind.Absolute));
+                        player2.Play();
+
                         finishWindow.Show();
 
                     }
@@ -198,6 +204,8 @@ namespace RocketMan
 
         public void StartGame()
         {
+            playBackGroundMusic();
+
             speed = 5;
             playerSpeed = 12;
             starSpeed = 4;
@@ -243,7 +251,6 @@ namespace RocketMan
                
             }
 
-            playBackGroundMusic();
             ToRemove.Clear();
             gameTimer.Start();
 
@@ -253,6 +260,7 @@ namespace RocketMan
         {
             var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;            
             player1.Open(new Uri(projectPath + "/resources/backgroundMusic.wav", UriKind.Absolute));
+            player1.Position = TimeSpan.Zero;
             player1.Play();
           
         }
