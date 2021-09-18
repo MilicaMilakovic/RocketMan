@@ -7,7 +7,8 @@
         xmlns:local="clr-namespace:RocketMan"
         mc:Ignorable="d"
         Title="SpaceAdventure" Height="600" Width="550"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
 
 
     <Canvas Name="myCanvas" Focusable="True" KeyUp="OnKeyUp" KeyDown="OnKeyDown">

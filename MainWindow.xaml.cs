@@ -58,11 +58,7 @@ namespace RocketMan
             gameTimer.Tick += GameLoop;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
 
-
-           
-
             StartGame();
-
 
         }
 
@@ -168,8 +164,6 @@ namespace RocketMan
                 myCanvas.Children.Remove(rectangle);
             }
            
-
-
         }
 
         private void OnKeyUp(object sender, KeyEventArgs e)
@@ -284,8 +278,7 @@ namespace RocketMan
             Canvas.SetTop(planet, random.Next(100, 400) * -1);
             Canvas.SetLeft(planet, random.Next(0, 430));
         }
-
-     
+             
 
         private void MakeStar()
         {

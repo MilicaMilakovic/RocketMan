@@ -9,6 +9,7 @@
         Title="GameOver" Height="400" Width="300"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
+        ResizeMode="NoResize"
         >
 
     <Window.Resources>

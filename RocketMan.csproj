@@ -120,7 +120,6 @@
     <Resource Include="resources\planet4.png" />
     <Resource Include="resources\planet5.png" />
     <Resource Include="resources\planet6.png" />
-    <Resource Include="resources\player.png" />
     <Resource Include="resources\star.png" />
   </ItemGroup>
   <ItemGroup>
@@ -155,10 +154,6 @@
     <Resource Include="resources\startBtn.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="resources\gameOver.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="resources\go.jpg" />
     <Resource Include="resources\go2.jpg" />
   </ItemGroup>
   <ItemGroup>
