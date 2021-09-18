@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/tardis.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/backgroundmusic.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/starsound.wav")]
 
 

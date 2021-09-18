@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Media;
 
 using System.Windows.Threading;
 
@@ -45,6 +46,9 @@ namespace RocketMan
 
         List<Rectangle> ToRemove = new List<Rectangle>();
 
+        private MediaPlayer player1 = new MediaPlayer();
+        private MediaPlayer player2 = new MediaPlayer();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -54,8 +58,11 @@ namespace RocketMan
             gameTimer.Tick += GameLoop;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
 
-            
+
+           
+
             StartGame();
+
 
         }
 
@@ -142,6 +149,7 @@ namespace RocketMan
                     if (playerHitBox.IntersectsWith(starHitBox))
                     {
                         ++starCount;
+                        playStarSound();
                         ToRemove.Add(x);
                     }
 
@@ -241,11 +249,28 @@ namespace RocketMan
                
             }
 
+            playBackGroundMusic();
             ToRemove.Clear();
             gameTimer.Start();
 
         }
 
+        private void playBackGroundMusic()
+        {
+            var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;            
+            player1.Open(new Uri(projectPath + "/resources/backgroundMusic.wav", UriKind.Absolute));
+            player1.Play();
+          
+        }
+
+        private void playStarSound()
+        {
+            var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            player2.Open(new Uri(projectPath + "/resources/starSound.wav", UriKind.Absolute));
+            player2.Play();
+          
+        }
         private void ChangePlanets(Rectangle planet)
         {
             int planetNumber = random.Next(1, 10);

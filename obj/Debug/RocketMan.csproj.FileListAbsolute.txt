@@ -21,3 +21,6 @@ C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\StartWindow.g.cs
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\StartWindow.baml
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\FinishWindow.g.cs
 C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\FinishWindow.baml
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\obj\Debug\RocketMan_Content.g.cs
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\resources\backgroundMusic.wav
+C:\Users\Milica\Desktop\C#\RocketMan\RocketMan\bin\Debug\resources\starSound.wav

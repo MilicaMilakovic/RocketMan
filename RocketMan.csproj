@@ -167,5 +167,13 @@
   <ItemGroup>
     <Resource Include="resources\tardis.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\backgroundMusic.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\starSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
