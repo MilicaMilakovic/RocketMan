@@ -10,7 +10,8 @@
 - Collect Stars
 - Avoid other planets
 
-> <a href="https://github.com/MilicaMilakovic/RocketMan/blob/master/Screenshots/SpaceAdventure.mkv" target="_blank" > Demo Video </a>
+ <p align="center"><img src="../master/SpaceAdventure.gif" width=500 /></p>
+
 
 ##
   - Start Screen
